@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/homepage" />
+
+    <item
+        android:id="@+id/likeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_heart"
+        android:title="@string/likepage" />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/cartpage" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/profilepage" />
+
+</menu>

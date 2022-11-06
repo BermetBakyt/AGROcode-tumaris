@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">AGROcode-tumaris</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="prompt_username">Name</string>
+    <string name="action_to_login_fragment">Already have account, Login</string>
+    <string name="action_to_register_fragment">Go to register page</string>
+    <string name="action_sign_in_email">Sign in</string>
+    <string name="action_sign_in_google">Sign in </string>
+    <string name="login_required">"Please login first!"</string>
+    <string name="log_out">"Log out"</string>
+    <string name="login_unsuccessful_msg">"Login failed"</string>
+    <string name="webclient_id">"Log out"</string>
+    <string name="create_new_account_signup">Create New Account ? SignUp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="logo">logo</string>
+    <string name="_10000">10000</string>
+    <string name="button">Button</string>
+
+    <string name="like">Like</string>
+    <string name="JordanDesciption">Air Jordan is a line of basketball shoes and athletic clothing produced by American corporation Nike. The first Air Jordan shoe was produced for Hall of Fame former basketball player Michael Jordan</string>
+    <string name="trending">Trending</string>
+    <string name="see_all">See All</string>
+    <string name="homepage">HomePage</string>
+    <string name="likepage">LikePage</string>
+    <string name="cartpage">CartPage</string>
+    <string name="profilepage">ProfilePage</string>
 </resources>

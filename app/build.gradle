@@ -1,15 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.test.agrocode_tumaris"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -30,15 +32,61 @@ android {
         jvmTarget = '1.8'
     }
     namespace 'com.test.agrocode_tumaris'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+
+    // Kotlin
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+
+    //viewBinding
+    implementation 'com.github.kirich1409:viewbindingpropertydelegate:1.5.3'
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //Kotlin Coroutines
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
+
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.3"))
+
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    //Glide Image Library
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation platform('com.google.firebase:firebase-bom:30.5.0')
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0'
 }
